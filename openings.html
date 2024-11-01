@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Pricing - Iqra Daycare & Preschool</title>
+    <title>Current Openings - Iqra Daycare & Preschool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -17,7 +17,7 @@
         }
         .nav-link.active {
             font-weight: bold;
-            color: #0d6efd !important;
+            color: #e26d06 !important;
         }
         footer {
             background-color: #f8f9fa;
@@ -27,17 +27,34 @@
             border-top: 1px solid #000000;
         }
         /* Additional Styles */
+        /* Updated Hero Section Styles */
         .hero-section {
-            background-color: #5a9bfc;
+            position: relative;
             color: white;
             padding: 100px 0;
+            background-image: url('Images/playingKids.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
         .section-title {
+            color: #e26d06 !important;
             margin-bottom: 40px;
             text-align: center;
         }
         .card-header {
-            background-color: #3e8afc;
+            background-color: #e26d06;
             color: white;
         }
         .card {
@@ -55,8 +72,12 @@
         .card-body p:last-child {
             margin-top: auto;
         }
+        .contact-section-title {
+            margin-bottom: 40px;
+            text-align: center;
+        }
         .contact-section {
-            background-color: #5a9bfc;
+            background-color: #2867c4;
             color: white;
             padding: 60px 0;
         }
@@ -99,7 +120,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="food.html">Food</a>
+                        <a class="nav-link" href="child-development-program.html">Child Development Program</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cleanliness.html">Cleanliness</a>
@@ -108,13 +129,10 @@
                         <a class="nav-link" href="child-safety.html">Safety</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="child-development-program.html">Child Development Program</a>
+                        <a class="nav-link" href="food.html">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="handbook.html">Parents Handbook</a>
+                        <a class="nav-link active" href="openings.html">Current Openings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -126,13 +144,14 @@
 
     <!-- Hero Section -->
     <section class="hero-section text-center">
-        <div class="container">
-            <h1 class="display-4">Our Pricing Plans</h1>
+        <div class="hero-overlay"></div>
+        <div class="hero-content container"> 
+            <h1 class="display-4">Our Current Openings</h1>
             <p class="lead">Affordable and flexible options for every family.</p>
         </div>
     </section>
 
-    <!-- Pricing Content -->
+    <!-- Current Openings Content -->
     <section class="py-5">
         <div class="container">
             <!-- Available Openings -->
@@ -208,7 +227,7 @@
     <!-- Contact Us Section -->
     <section class="contact-section text-center">
         <div class="container">
-            <h2 class="section-title text-white">Enroll Today</h2>
+            <h2 class="contact-section-title">Enroll Today</h2>
             <p>Contact us to discuss the best plan for your family or to schedule a tour of our facility.</p>
             <a href="contact.html" class="btn btn-light">Contact Us</a>
         </div>

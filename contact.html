@@ -19,7 +19,7 @@
         }
         .nav-link.active {
             font-weight: bold;
-            color: #0d6efd !important;
+            color: #e26d06 !important;
         }
         footer {
             background-color: #f8f9fa;
@@ -29,12 +29,29 @@
             border-top: 1px solid #000000;
         }
         /* Additional Styles */
+        /* Updated Hero Section Styles */
         .hero-section {
-            background-color: #5a9bfc;
+            position: relative;
             color: white;
             padding: 100px 0;
+            background-image: url('Images/playingKids.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
         .section-title {
+            color: #e26d06 !important;
             margin-bottom: 40px;
             text-align: center;
         }
@@ -96,7 +113,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="food.html">Food</a>
+                        <a class="nav-link" href="child-development-program.html">Child Development Program</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cleanliness.html">Cleanliness</a>
@@ -105,13 +122,10 @@
                         <a class="nav-link" href="child-safety.html">Safety</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="child-development-program.html">Child Development Program</a>
+                        <a class="nav-link" href="food.html">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="handbook.html">Parents Handbook</a>
+                        <a class="nav-link" href="openings.html">Current Openings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link active" href="contact.html">Contact</a>
@@ -124,7 +138,8 @@
 
     <!-- Hero Section -->
     <section class="hero-section text-center">
-        <div class="container">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container"> 
             <h1 class="display-4">Get in Touch</h1>
             <p class="lead">We'd love to hear from you. Contact us for any inquiries or to schedule a visit.</p>
         </div>

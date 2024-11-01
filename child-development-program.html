@@ -18,7 +18,7 @@
         }
         .nav-link.active {
             font-weight: bold;
-            color: #0d6efd !important;
+            color: #e26d06 !important;
         }
         footer {
             background-color: #f8f9fa;
@@ -28,12 +28,33 @@
             border-top: 1px solid #000000;
         }
         /* Additional Styles */
+        /* Updated Hero Section Styles */
         .hero-section {
-            background-color: #5a9bfc;
+            position: relative;
             color: white;
             padding: 100px 0;
+            background-image: url('Images/playingKids.png');
+            background-size: cover;
+            background-position: center;
+        }
+        .hero-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+        }
+        .hero-content {
+            position: relative;
+            z-index: 1;
         }
         .section-title {
+            color: #e26d06 !important;
+            margin-bottom: 40px;
+            text-align: center;
+        }
+        .contact-section-title {
             margin-bottom: 40px;
             text-align: center;
         }
@@ -64,7 +85,7 @@
             background-color: #e9ecef;
         }
         .contact-section {
-            background-color: #5a9bfc;
+            background-color: #2867c4;
             color: white;
             padding: 60px 0;
         }
@@ -103,7 +124,7 @@
                         <a class="nav-link" href="about.html">About</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="food.html">Food</a>
+                        <a class="nav-link active" href="child-development-program.html">Child Development Program</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="cleanliness.html">Cleanliness</a>
@@ -111,15 +132,11 @@
                     <li class="nav-item">
                         <a class="nav-link" href="child-safety.html">Safety</a>
                     </li>
-                    <!-- Active nav item -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="child-development-program.html">Child Development Program</a>
+                        <a class="nav-link" href="food.html">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="pricing.html">Pricing</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="handbook.html">Parents Handbook</a>
+                        <a class="nav-link" href="openings.html">Current Openings</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -131,7 +148,8 @@
 
     <!-- Hero Section -->
     <section class="hero-section text-center">
-        <div class="container">
+        <div class="hero-overlay"></div>
+        <div class="hero-content container">             
             <h1 class="display-4">Child Development Program</h1>
             <p class="lead">Nurturing growth through engaging activities and learning centers.</p>
         </div>
@@ -259,7 +277,7 @@
         <!-- Contact Us Section -->
         <section class="contact-section text-center">
             <div class="container">
-                <h2 class="section-title text-white">Interested in Our Program?</h2>
+                <h2 class="contact-section-title">Interested in Our Program?</h2>
                 <p>Enroll your child today or schedule a tour to experience our nurturing environment firsthand.</p>
                 <a href="contact.html" class="btn btn-light">Contact Us</a>
             </div>
