@@ -2,14 +2,15 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Current Openings - Iqra Daycare & Preschool</title>
+    <title>Gallery - Iqra Daycare & Preschool</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- Bootstrap CSS -->
+    <!-- Bootstrap CSS and Bootstrap Icons CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <!-- Bootstrap Icons CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
-    <!-- Custom Styles -->
+    <!-- Favicon -->
     <link rel="icon" href="Images/logoIqra.png" type="image/png">
+    <!-- Custom Styles -->
     <style>
         body {
             background-color: #f8f9fa;
@@ -28,13 +29,12 @@
             text-align: center;
             border-top: 1px solid #000000;
         }
-        /* Additional Styles */
-        /* Updated Hero Section Styles */
+        /* Hero Section Styles */
         .hero-section {
             position: relative;
             color: white;
             padding: 100px 0;
-            background-image: url('Images/pic7.jpeg');
+            background-image: url('Images/pic1.jpeg');
             background-size: cover;
             background-position: center;
         }
@@ -44,7 +44,7 @@
             left: 0;
             width: 100%;
             height: 100%;
-            background: rgba(0, 0, 0, 0.6); /* Adjust opacity as needed */
+            background: rgba(0, 0, 0, 0.6);
         }
         .hero-content {
             position: relative;
@@ -55,28 +55,21 @@
             margin-bottom: 40px;
             text-align: center;
         }
-        .card-header {
-            background-color: #e26d06;
-            color: white;
+        .gallery-section {
+            padding: 60px 0;
         }
-        .card {
+        .gallery-item {
             margin-bottom: 30px;
+            overflow: hidden;
+            border-radius: 5px;
         }
-        .openings {
-            font-size: 0.9em;
-            color: #28a745;
+        .gallery-item img {
+            width: 100%;
+            height: auto;
+            transition: transform 0.3s;
         }
-        /* Equal Height Cards */
-        .card-body {
-            display: flex;
-            flex-direction: column;
-        }
-        .card-body p:last-child {
-            margin-top: auto;
-        }
-        .contact-section-title {
-            margin-bottom: 40px;
-            text-align: center;
+        .gallery-item:hover img {
+            transform: scale(1.05);
         }
         .contact-section {
             background-color: #2867c4;
@@ -88,13 +81,6 @@
             color: #000000;
             border: none;
         }
-        ul {
-            list-style-type: disc;
-            padding-left: 20px;
-        }
-        ul li {
-            margin-bottom: 10px;
-        }
     </style>
 </head>
 <body>
@@ -102,6 +88,7 @@
     <!-- Navbar -->
     <nav class="navbar navbar-expand-lg navbar-light bg-white shadow-sm">
         <div class="container-fluid">
+            <!-- Logo and Brand Name -->
             <a class="navbar-brand d-flex align-items-center" href="index.html">
                 <!-- Logo Image -->
                 <img src="Images/logoIqra.png" alt="Iqra Daycare & Preschool Logo" height="70" class="me-2">
@@ -134,10 +121,10 @@
                         <a class="nav-link" href="food.html">Food</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" href="openings.html">Current Openings</a>
+                        <a class="nav-link" href="openings.html">Current Openings</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="gallery.html">Gallery</a>
+                        <a class="nav-link active" href="gallery.html">Gallery</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="contact.html">Contact</a>
@@ -150,90 +137,100 @@
     <!-- Hero Section -->
     <section class="hero-section text-center">
         <div class="hero-overlay"></div>
-        <div class="hero-content container"> 
-            <h1 class="display-4">Our Current Openings</h1>
-            <p class="lead">Affordable and flexible options for every family.</p>
+        <div class="hero-content container">
+            <h1 class="display-4">Our Gallery</h1>
+            <p class="lead">A glimpse into the vibrant life at Iqra Daycare & Preschool.</p>
         </div>
     </section>
 
-    <!-- Current Openings Content -->
-    <section class="py-5">
+    <!-- Gallery Section -->
+    <section class="gallery-section">
         <div class="container">
-            <!-- Available Openings -->
-            <h2 class="section-title">Available Openings by Age Group</h2>
-            <div class="row row-cols-1 row-cols-md-4 g-4">
-                <!-- Infant Age Group -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <div class="card-header">
-                            <h3>Infants</h3>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p>Age: 6 weeks - 18 months</p>
-                            <p><strong>2 Openings</strong></p>
-                            <p class="openings mt-auto">
-                                <a href="contact.html" class="text-decoration-none text-success">Contact us to enroll</a>
-                            </p>
-                        </div>
+            <h2 class="section-title">Explore Our Activities and Facilities</h2>
+            <div class="row">
+                <!-- Gallery Items -->
+                <!-- Repeat this block for each image -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic1.jpeg" alt="Gallery Image 1">
                     </div>
                 </div>
-                <!-- Toddler Age Group -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <div class="card-header">
-                            <h3>Toddlers</h3>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p>Age: 18 months - 3 years</p>
-                            <p><strong>2 Openings</strong></p>
-                            <p class="openings mt-auto">
-                                <a href="contact.html" class="text-decoration-none text-success">Contact us to enroll</a>
-                            </p>
-                        </div>
+                <!-- Add similar blocks for images pic2.jpeg to pic12.jpeg -->
+                <!-- pic2.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic2.jpeg" alt="Gallery Image 2">
                     </div>
                 </div>
-                <!-- Preschool Age Group -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <div class="card-header">
-                            <h3>Preschool</h3>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p>Age: 3 - 5 years</p>
-                            <p><strong>3 Openings</strong></p>
-                            <p class="openings mt-auto">
-                                <a href="contact.html" class="text-decoration-none text-success">Contact us to enroll</a>
-                            </p>
-                        </div>
+                <!-- pic3.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic3.jpeg" alt="Gallery Image 3">
                     </div>
                 </div>
-                <!-- School Age Group -->
-                <div class="col">
-                    <div class="card h-100 text-center">
-                        <div class="card-header">
-                            <h3>School Age</h3>
-                        </div>
-                        <div class="card-body d-flex flex-column">
-                            <p>Age: 5 - 12 years</p>
-                            <p><strong>2 Openings</strong></p>
-                            <p class="openings mt-auto">
-                                <a href="contact.html" class="text-decoration-none text-success">Contact us to enroll</a>
-                            </p>
-                        </div>
+                <!-- pic4.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic4.jpeg" alt="Gallery Image 4">
+                    </div>
+                </div>
+                <!-- pic5.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic5.jpeg" alt="Gallery Image 5">
+                    </div>
+                </div>
+                <!-- pic6.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic6.jpeg" alt="Gallery Image 6">
+                    </div>
+                </div>
+                <!-- pic7.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic7.jpeg" alt="Gallery Image 7">
+                    </div>
+                </div>
+                <!-- pic8.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic8.jpeg" alt="Gallery Image 8">
+                    </div>
+                </div>
+                <!-- pic9.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic9.jpeg" alt="Gallery Image 9">
+                    </div>
+                </div>
+                <!-- pic10.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic10.jpeg" alt="Gallery Image 10">
+                    </div>
+                </div>
+                <!-- pic11.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic11.jpeg" alt="Gallery Image 11">
+                    </div>
+                </div>
+                <!-- pic12.jpeg -->
+                <div class="col-sm-6 col-md-4">
+                    <div class="gallery-item">
+                        <img src="Images/pic12.jpeg" alt="Gallery Image 12">
                     </div>
                 </div>
             </div>
-            
         </div>
     </section>
-
-    
 
     <!-- Contact Us Section -->
     <section class="contact-section text-center">
         <div class="container">
-            <h2 class="contact-section-title">Enroll Today</h2>
-            <p>Contact us to discuss the best plan for your family or to schedule a tour of our facility.</p>
+            <h2 class="contact-section-title">Interested in Joining?</h2>
+            <p>Contact us to learn more about our programs or to schedule a visit.</p>
             <a href="contact.html" class="btn btn-light">Contact Us</a>
         </div>
     </section>
